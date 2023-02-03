@@ -86,5 +86,6 @@
 	<classpathentry kind="lib" path="jre/xmlgraphics-commons-2.6.jar"/>
 	<classpathentry kind="lib" path="jre/xmlsec-3.0.0.jar"/>
 	<classpathentry kind="lib" path="jre/poi-5.2.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
