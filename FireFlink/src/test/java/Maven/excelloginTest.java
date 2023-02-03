@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class excellogin 
+public class excelloginTest 
 {
 	@Test(dataProvider = "tester")
 	public void log(String UserName, String Password) throws InterruptedException
@@ -31,6 +31,6 @@ public class excellogin
 	@DataProvider(name="tester", parallel = true)
 	public Object[][] testing() throws EncryptedDocumentException, IOException 
 	{
-		return excel.test("ram");
+		return excelTest.test("ram");
 	}
 }

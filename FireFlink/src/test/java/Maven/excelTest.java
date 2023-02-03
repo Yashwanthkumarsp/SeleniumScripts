@@ -9,7 +9,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.Test;
 
-public class excel {
+public class excelTest {
 	@Test
 	public static Object[][] test(String sheetname) throws EncryptedDocumentException, IOException {
 		FileInputStream fs = new FileInputStream("./src/test/resources/Data/yash.xlsx");
