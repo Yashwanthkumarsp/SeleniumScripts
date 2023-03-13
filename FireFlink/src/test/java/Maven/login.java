@@ -7,6 +7,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,9 @@ public class login
 	{
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions op=new ChromeOptions();
+		op.addArguments("--remote-allow-origins=*");
+		WebDriver driver = new ChromeDriver(op);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://demowebshop.tricentis.com/");
 		driver.findElement(By.xpath("//a[@href='/login']")).click();
